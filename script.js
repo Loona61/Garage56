@@ -15,6 +15,7 @@ function Person(firstName, lastName, age , sex) {
         unique = (this.age > 1) ? ' Ans. ':' An. ';
         swal('Bien joué !', this.firstName + ' ' + this.lastName + ' est le choix parfait pour cette formation, et je suis sur que vous n\'avez pas hesité une seconde, en plus il a l\'age parfait: ' + this.age + unique, 'success');
         document.getElementsByClassName("choice")[0].innerHTML = this.firstName + ' a été choisi. Appelez le vite pour le prevenir, il n\'attend que ca.';
+        document.getElementById("winner").style.display = 'inline';
     };
 }
 
